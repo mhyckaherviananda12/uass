@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            background: radial-gradient(circle, #1a1a2e, #16213e, #0f3460);
+            overflow-x: hidden;
+        }
+
+        section.user-profile {
+            margin: 0 auto;
+            padding: 50px 30px;
+            max-width: 600px; /* Batas lebar agar layout tetap rapi */
+            text-align: center; /* Memusatkan teks dan elemen di dalam */
+        }
+
+        .user-profile .heading {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .user-profile .info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .user-profile .info .user {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(108, 31, 31, 0.5);
+        }
+
+        .user-profile .info .user img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #ffffff;
+        }
+
+        .user-profile .info .user h3 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .user-profile .info .user p {
+            font-size: 1em;
+            color: #d1d1d1;
+            margin-bottom: 20px;
+        }
+
+        .user-profile .info .user .inline-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ffffff;
+            background: #3f72af;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .user-profile .info .user .inline-btn:hover {
+            background: #1b1b2f;
+            transform: scale(1.05);
+        }
+
+        footer.footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #ffffff;
+            font-size: 0.9em;
+            margin-top: 50px;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .galaxy {
+            position: fixed;
+            top: -100px;
+            left: -100px;
+            width: 200%;
+            height: 200%;
+            background: url('https://source.unsplash.com/1600x900/?galaxy') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.1;
+            z-index: -1;
+            animation: moveGalaxy 20s linear infinite;
+        }
+
+        @keyframes moveGalaxy {
+            0% {
+                transform: scale(1) rotate(0deg) translateX(0);
+            }
+
+            100% {
+                transform: scale(1.2) rotate(360deg) translateX(-20%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="galaxy"></div>
+
+    <section class="user-profile">
+        <h1 class="heading">Metode Pembelajaran</h1>
+
+        <div class="info">
+            <div class="user">
+                <img src="PP.jpg" alt="Profile Picture">
+                <h3>Mhycka Herviananda Yuwono</h3>
+                <p>Pendidikan Teknik Mekatronika</p>
+                <a href="kedua.html" class="inline-btn">Materi</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        &copy; Tugas Metode Pembelajaran Pendidikan Kewarganegaraan berbasis WEB/DIGITAL | By Mhycka Herviananda Yuwono 
+        NIM : 24050630001
+    </footer>
+</body>
+
+</html>
